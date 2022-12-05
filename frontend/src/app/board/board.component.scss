@@ -1,0 +1,27 @@
+td {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.board {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-collapse: collapse;
+}
+
+.piece {
+  display: block;
+  margin: 0 auto;
+  transform: scale(1.25);
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background: rgba(0, 255, 0, 0.2);
+  position: absolute;
+  top: 17px;
+  left: 28px;
+  z-index: 1;
+}

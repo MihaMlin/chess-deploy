@@ -1,0 +1,12 @@
+<table class="board">
+  <tr *ngFor="let row of board">
+    <td *ngFor="let block of row" [style.background-color]="block.color ? 'white': '#a02910'" (click)="move(block)"
+    (dragover)="dragOver($event)" (drop)="drop(block)">
+      <img class="piece" *ngIf="block.piece" [src]="block.piece.path" alt="" (dragstart)="dragStart(block)" draggable="true">
+      <p class="circle" *ngIf="isMoveValid(block)"></p>
+    </td>
+  </tr>
+</table>
+
+<button mat-button routerLink="login">login</button>
+<button mat-button routerLink="register">register</button>
